@@ -19,6 +19,7 @@ Route::delete('/customer/{id}', [CustomerController::class, 'destroy'])->name('C
 Route::get('/invoice', [InvoiceController::class, 'index'])->name('Invoices.index');
 Route::get('/create-invoice', [InvoiceController::class, 'create'])->name('Invoices.create');
 Route::post('/store-invoice', [InvoiceController::class, 'store'])->name('Invoices.store');
+Route::get('/show-invoice/{id}', [InvoiceController::class, 'show'])->name('Invoices.show');
 Route::get('/invoice/{id}/edit', [InvoiceController::class, 'edit'])->name('Invoices.edit');
 Route::put('/update-invoice/{id}', [InvoiceController::class, 'update'])->name('Invoices.update');
 Route::delete('/invoice/{id}', [InvoiceController::class, 'destroy'])->name('Invoices.destroy');

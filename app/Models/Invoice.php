@@ -17,6 +17,9 @@ class Invoice extends Model
         'total_tva',
         'total_ttc'
     ];
+    protected $casts = [
+        'lines' => 'array'
+    ];
 
     public function customer()
     {

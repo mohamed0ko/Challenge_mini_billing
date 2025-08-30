@@ -9,7 +9,7 @@
         @foreach ($invoice->lines as $line)
             <li>product: {{ $line['description'] }}</li>
             <li>Quantité: {{ $line['quantity'] }}</li>
-            <li>Prix unitaire HT: {{ $line['unit_price'] }}</li>
+            <li>Prix: {{ $line['unit_price'] }}</li>
             <li>TVA: {{ $line['tva_rate'] }}%</li>
         @endforeach
 
